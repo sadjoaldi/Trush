@@ -4,6 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trush</title>
+    <link rel="stylesheet" href="./output/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center mt-2">
+        <div class="relative">
+          <button id="burger" class="focus:outline-none block lg:hidden">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path
+                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="menu"
+            class="absolute w-64 mt-2 py-2 bg-white rounded-lg shadow-xl hidden"
+          >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
+              >Accueil</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
+              >Histoire</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <span>PANIER (0)</span>
+      </nav>
+      <img src="./assets/hero.jpg" alt="logo" class="" />
+    </header>
+    <script>
+      document.getElementById("burger").addEventListener("click", function () {
+        document.getElementById("menu").classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
