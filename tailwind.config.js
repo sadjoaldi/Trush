@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html"],
+  purge: {
+    enabled: true,
+    content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  },
   theme: {
     extend: {
       colors: {
@@ -17,6 +21,11 @@ module.exports = {
       fontFamily: {
         body: ["Roboto", "sans-serif"],
       },
+    },
+  },
+  variants: {
+    extend: {
+      display: ["responsive", "group-hover", "group-focus"],
     },
   },
   plugins: [],
