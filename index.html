@@ -8,7 +8,9 @@
   </head>
   <body class="font-xs">
     <header>
-      <nav class="flex justify-between items-center mt-2 h-16">
+      <nav
+        class="flex justify-between items-center mt-2 h-16 lg:flex lg:justify-between lg:items-center"
+      >
         <div class="hidden lg:flex lg:items-center lg:justify-center">
           <span>FR </span>
           <svg
@@ -42,7 +44,7 @@
           </button>
           <div
             id="menu"
-            class="absolute w-64 mt-2 py-2 bg-transparent rounded-lg shadow-xl hidden lg:flex lg:items-center lg:justify-between"
+            class="absolute w-64 mt-2 py-2 lg:mt-0 lg:py-0 bg-transparent rounded-lg shadow-xl hidden lg:flex lg:items-center lg:justify-between lg:shadow-none"
           >
             <a
               href="./index.html"
@@ -66,15 +68,15 @@
       <img
         src="./assets/hero.jpg"
         alt="logo"
-        class="w-full h-full lg:h-[610px] object-cover object-center"
+        class="w-full h-full lg:h-[610px] lg:w-screen object-cover object-center"
       />
     </header>
     <main>
       <section class="m-2">
         <section
-          class="grid gap-20 opacity-75 uppercase py-24 px-4 text-center lg:flex lg:items-center lg:justify-center"
+          class="grid gap-20 opacity-75 uppercase py-24 px-4 text-center lg:flex lg:items-center lg:justify-center lg:py-44"
         >
-          <p class="w-80 h-56 text-lg mx-auto leading-7">
+          <p class="w-80 text-lg mx-auto lg:w-[40rem]">
             Lorem ipsum dolor sit amet consectetur. Cursus facilisis in gravida
             aliquet ac sed elementum. Donec et in tellus aliquam quam non magna.
             Quis eget accumsan in aliquam. Lorem tristique in eu vitae turpis
@@ -86,7 +88,7 @@
           </div>
         </section>
         <section>
-          <div class="">
+          <div class="lg:w-[712px] lg:mx-auto">
             <div class="flex flex-col">
               <img src="./assets/2-1-min.jpg" alt="" />
               <img src="./assets/7-2-min.jpg" alt="" />
@@ -155,110 +157,210 @@
                 />AJOUTER AU PANIER
               </button>
             </div>
-          </div>
-        </section>
-        <section>
-          <div class="pt-14 w-11/12 mx-auto">
-            <div class="leading-10">
-              <p class="uppercase flex justify-between items-center">
-                Entretien
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 9-7 7-7-7"
-                  />
-                </svg>
-              </p>
-              <p class="uppercase flex justify-between items-center">
-                Livraison et retour
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 9-7 7-7-7"
-                  />
-                </svg>
-              </p>
-              <p class="uppercase flex justify-between items-center">
-                Packaging
-                <svg
-                  class="w-6 h-6 text-gray-800 dark:text-white"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 9-7 7-7-7"
-                  />
-                </svg>
-              </p>
-            </div>
-            <div class="mt-4 grid gap-5">
-              <ul class="divide-y divide-gray-300">
-                <li class="flex items-center py-2">
-                  <img
-                    src="./assets/Frame france.png"
-                    alt="Made in France"
-                    class="w-11 h-11 mr-8"
-                  />
-                  <span class="text-sm">FABRIQUÉ EN FRANCE</span>
-                </li>
-                <li class="flex items-center py-2">
-                  <img
-                    src="./assets/VectorEcolo.png"
-                    alt="matières durables et vegan"
-                    class="w-11 h-11 mr-8"
-                  />
-                  <span class="text-sm">MATIÈRES DURABLES ET VEGAN</span>
-                </li>
-                <li class="flex items-center py-2">
-                  <img
-                    src="./assets/GroupSalute.png"
-                    alt="confiance partners "
-                    class="w-11 h-11 mr-8"
-                  />
-                  <span class="text-sm">PARTENAIRES DE CONFIANCE</span>
-                </li>
-                <li class="flex items-center py-2">
-                  <img
-                    src="./assets/Vectorartisanal.png"
-                    alt="conçu et assemblé à la main"
-                    class="w-11 h-11 mr-8"
-                  />
-                  <span class="text-sm">CONÇU ET ASSEMBLÉ À LA MAIN</span>
-                </li>
-              </ul>
+            <div class="pt-14 w-11/12 mx-auto">
+              <div class="leading-10">
+                <p class="uppercase flex justify-between items-center">
+                  Entretien
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 9-7 7-7-7"
+                    />
+                  </svg>
+                </p>
+                <p class="uppercase flex justify-between items-center">
+                  Livraison et retour
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 9-7 7-7-7"
+                    />
+                  </svg>
+                </p>
+                <p class="uppercase flex justify-between items-center">
+                  Packaging
+                  <svg
+                    class="w-6 h-6 text-gray-800 dark:text-white"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 9-7 7-7-7"
+                    />
+                  </svg>
+                </p>
+              </div>
+              <div class="mt-4 grid gap-5">
+                <ul class="divide-y divide-gray-300">
+                  <li class="flex items-center py-2">
+                    <img
+                      src="./assets/Frame france.png"
+                      alt="Made in France"
+                      class="w-11 h-11 mr-8"
+                    />
+                    <span class="text-sm">FABRIQUÉ EN FRANCE</span>
+                  </li>
+                  <li class="flex items-center py-2">
+                    <img
+                      src="./assets/VectorEcolo.png"
+                      alt="matières durables et vegan"
+                      class="w-11 h-11 mr-8"
+                    />
+                    <span class="text-sm">MATIÈRES DURABLES ET VEGAN</span>
+                  </li>
+                  <li class="flex items-center py-2">
+                    <img
+                      src="./assets/GroupSalute.png"
+                      alt="confiance partners "
+                      class="w-11 h-11 mr-8"
+                    />
+                    <span class="text-sm">PARTENAIRES DE CONFIANCE</span>
+                  </li>
+                  <li class="flex items-center py-2">
+                    <img
+                      src="./assets/Vectorartisanal.png"
+                      alt="conçu et assemblé à la main"
+                      class="w-11 h-11 mr-8"
+                    />
+                    <span class="text-sm">CONÇU ET ASSEMBLÉ À LA MAIN</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
+
+        <!-- <div class="pt-14 w-11/12 mx-auto">
+          <div class="leading-10">
+            <p class="uppercase flex justify-between items-center">
+              Entretien
+              <svg
+                class="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            </p>
+            <p class="uppercase flex justify-between items-center">
+              Livraison et retour
+              <svg
+                class="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            </p>
+            <p class="uppercase flex justify-between items-center">
+              Packaging
+              <svg
+                class="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 9-7 7-7-7"
+                />
+              </svg>
+            </p>
+          </div>
+          <div class="mt-4 grid gap-5">
+            <ul class="divide-y divide-gray-300">
+              <li class="flex items-center py-2">
+                <img
+                  src="./assets/Frame france.png"
+                  alt="Made in France"
+                  class="w-11 h-11 mr-8"
+                />
+                <span class="text-sm">FABRIQUÉ EN FRANCE</span>
+              </li>
+              <li class="flex items-center py-2">
+                <img
+                  src="./assets/VectorEcolo.png"
+                  alt="matières durables et vegan"
+                  class="w-11 h-11 mr-8"
+                />
+                <span class="text-sm">MATIÈRES DURABLES ET VEGAN</span>
+              </li>
+              <li class="flex items-center py-2">
+                <img
+                  src="./assets/GroupSalute.png"
+                  alt="confiance partners "
+                  class="w-11 h-11 mr-8"
+                />
+                <span class="text-sm">PARTENAIRES DE CONFIANCE</span>
+              </li>
+              <li class="flex items-center py-2">
+                <img
+                  src="./assets/Vectorartisanal.png"
+                  alt="conçu et assemblé à la main"
+                  class="w-11 h-11 mr-8"
+                />
+                <span class="text-sm">CONÇU ET ASSEMBLÉ À LA MAIN</span>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+
         <section>
           <div>
             <div
@@ -369,7 +471,7 @@
                 </span>
               </div>
             </div>
-            <span class="uppercase w-20 h-6 text-base">Trush 2023</span>
+            <span class="uppercase w-20 h-6 text-base px-4">Trush 2023</span>
           </div>
         </section>
       </section>
