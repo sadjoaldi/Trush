@@ -72,9 +72,9 @@
       />
     </header>
     <main>
-      <section class="m-2">
-        <section
-          class="grid gap-20 opacity-75 uppercase py-24 px-4 text-center lg:flex lg:items-center lg:justify-center lg:py-44"
+      <section>
+        <div
+          class="flex flex-col opacity-75 uppercase py-24 text-center lg:flex lg:items-center lg:justify-center"
         >
           <p class="w-80 text-lg mx-auto lg:w-[40rem]">
             Lorem ipsum dolor sit amet consectetur. Cursus facilisis in gravida
@@ -82,73 +82,92 @@
             Quis eget accumsan in aliquam. Lorem tristique in eu vitae turpis
             mattis risus urna in.
           </p>
-          <div class="flex items-center justify-center underline">
+          <div class="flex items-center justify-center mt-12 underline">
             <span class="bg-transparent border-0 mr-2"> Découvrir Trush </span
             ><img src="./assets/Iconstrush.png" alt="" />
           </div>
-        </section>
-        <section>
-          <div class="lg:w-[712px] lg:mx-auto">
-            <div class="flex flex-col">
-              <img src="./assets/2-1-min.jpg" alt="" />
-              <img src="./assets/7-2-min.jpg" alt="" />
-              <img src="./assets/1-ombre-min.jpg" alt="" />
-              <img src="./assets/3-1-min.jpg" alt="" />
-              <img src="./assets/image00022-min.png" alt="" />
+        </div>
+        <section class="">
+          <div class="lg:flex lg:justify-center lg:mx-4">
+            <div
+              class="lg:w-[712px] lg:mx-auto lg:order-2 flex flex-col w-11/12 mx-auto"
+            >
+              <img
+                src="./assets/2-1-min.jpg"
+                alt=""
+                class="border border-solid"
+              />
+              <img
+                src="./assets/7-2-min.jpg"
+                alt=""
+                class="border border-solid"
+              />
+              <img
+                src="./assets/1-ombre-min.jpg"
+                alt=""
+                class="border border-solid"
+              />
+              <img
+                src="./assets/3-1-min.jpg"
+                alt=""
+                class="border border-solid"
+              />
+              <img
+                src="./assets/image00022-min.png"
+                alt=""
+                class="border border-solid"
+              />
               <img
                 src="./assets/Picnic goodies arrangement on a blanket.png"
                 alt=""
+                class="border border-solid"
               />
             </div>
-            <div class="pt-14 grid gap-8">
-              <h2 class="uppercase text-2xl w-[361px]">Bob Marie Marguerite</h2>
-              <p class="text-sm font-light">
+            <div class="pt-14 w-11/12 mx-auto flex flex-col lg:order-3 lg:pt-0">
+              <h2 class="uppercase text-2xl">Bob Marie Marguerite</h2>
+              <p class="text-sm font-light mt-8">
                 Bob 100% coton avec attache métallique CT dorée 24 carats et
                 finissions en polyesterOekotex.
               </p>
               <div>
-                <div class="">
-                  <div class="mb-4 w-56 flex flex-col items-start">
-                    <span class="text-sm font-light mb-5">COULEUR</span>
-                    <div class="flex flex-col ml-5">
-                      <input
-                        type="radio"
-                        id="color-white"
-                        name="color"
-                        value="white"
-                        class="mr-2"
-                      />
-                      <label for="color-white " class="mt-5">Blanc</label>
-                    </div>
+                <div class="mb-4 w-56 flex flex-col items-start mt-4">
+                  <span class="text-sm font-light mb-5">COULEUR</span>
+                  <div class="flex flex-col ml-5">
+                    <input
+                      type="radio"
+                      id="color-white"
+                      name="color"
+                      value="white"
+                      class=""
+                    />
+                    <label for="color-white " class="mt-5">Blanc</label>
                   </div>
-                  <div class="font-light">
-                    <span class="text-sm">TAILLE</span>
-                    <div class="flex">
-                      <div
-                        class="w-12 h-12 flex items-center justify-center border border-gray-400 rounded mr-2"
-                      >
-                        S
-                      </div>
-                      <div
-                        class="w-12 h-12 flex items-center justify-center border border-gray-400 rounded mr-2 opacity-50"
-                      >
-                        M
-                      </div>
-                      <div
-                        class="w-12 h-12 flex items-center justify-center border border-gray-400 rounded opacity-50"
-                      >
-                        L
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#" class="text-black mt-4 block"
-                    >GUIDE DES TAILLES</a
-                  >
                 </div>
+                <div class="font-light">
+                  <span class="text-sm">TAILLE</span>
+                  <div class="flex">
+                    <div
+                      class="w-12 h-12 flex items-center justify-center border border-gray-400 rounded mr-2"
+                    >
+                      S
+                    </div>
+                    <div
+                      class="w-12 h-12 flex items-center justify-center border border-gray-400 rounded mr-2 opacity-50"
+                    >
+                      M
+                    </div>
+                    <div
+                      class="w-12 h-12 flex items-center justify-center border border-gray-400 rounded opacity-50"
+                    >
+                      L
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="text-black mt-4 block">GUIDE DES TAILLES</a>
                 <p class="text-2xl font-light text-black mt-5 mb-3">450 €</p>
               </div>
               <button
-                class="flex items-center justify-center bg-transparent border border-solid border-black font-light text-sm py-4 w-96 mx-auto"
+                class="flex items-center justify-center bg-transparent border border-solid border-black font-light text-sm py-4 w-[22rem]"
               >
                 <img
                   src="./assets/Iconspanier.png"
@@ -157,8 +176,8 @@
                 />AJOUTER AU PANIER
               </button>
             </div>
-            <div class="pt-14 w-11/12 mx-auto">
-              <div class="leading-10">
+            <div class="pt-14 w-11/12 mx-auto lg:order-1 lg:pt-0 lg:w-1/4">
+              <div class="leading-[4rem]">
                 <p class="uppercase flex justify-between items-center">
                   Entretien
                   <svg
@@ -220,9 +239,9 @@
                   </svg>
                 </p>
               </div>
-              <div class="mt-4 grid gap-5">
-                <ul class="divide-y divide-gray-300">
-                  <li class="flex items-center py-2">
+              <div class="my-10">
+                <ul class="">
+                  <li class="flex items-center py-2 mb-8">
                     <img
                       src="./assets/Frame france.png"
                       alt="Made in France"
@@ -230,7 +249,7 @@
                     />
                     <span class="text-sm">FABRIQUÉ EN FRANCE</span>
                   </li>
-                  <li class="flex items-center py-2">
+                  <li class="flex items-center py-2 mb-8">
                     <img
                       src="./assets/VectorEcolo.png"
                       alt="matières durables et vegan"
@@ -238,7 +257,7 @@
                     />
                     <span class="text-sm">MATIÈRES DURABLES ET VEGAN</span>
                   </li>
-                  <li class="flex items-center py-2">
+                  <li class="flex items-center py-2 mb-8">
                     <img
                       src="./assets/GroupSalute.png"
                       alt="confiance partners "
@@ -246,7 +265,7 @@
                     />
                     <span class="text-sm">PARTENAIRES DE CONFIANCE</span>
                   </li>
-                  <li class="flex items-center py-2">
+                  <li class="flex items-center py-2 mb-8">
                     <img
                       src="./assets/Vectorartisanal.png"
                       alt="conçu et assemblé à la main"
@@ -260,111 +279,10 @@
           </div>
         </section>
 
-        <!-- <div class="pt-14 w-11/12 mx-auto">
-          <div class="leading-10">
-            <p class="uppercase flex justify-between items-center">
-              Entretien
-              <svg
-                class="w-6 h-6 text-gray-800 dark:text-white"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m19 9-7 7-7-7"
-                />
-              </svg>
-            </p>
-            <p class="uppercase flex justify-between items-center">
-              Livraison et retour
-              <svg
-                class="w-6 h-6 text-gray-800 dark:text-white"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m19 9-7 7-7-7"
-                />
-              </svg>
-            </p>
-            <p class="uppercase flex justify-between items-center">
-              Packaging
-              <svg
-                class="w-6 h-6 text-gray-800 dark:text-white"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m19 9-7 7-7-7"
-                />
-              </svg>
-            </p>
-          </div>
-          <div class="mt-4 grid gap-5">
-            <ul class="divide-y divide-gray-300">
-              <li class="flex items-center py-2">
-                <img
-                  src="./assets/Frame france.png"
-                  alt="Made in France"
-                  class="w-11 h-11 mr-8"
-                />
-                <span class="text-sm">FABRIQUÉ EN FRANCE</span>
-              </li>
-              <li class="flex items-center py-2">
-                <img
-                  src="./assets/VectorEcolo.png"
-                  alt="matières durables et vegan"
-                  class="w-11 h-11 mr-8"
-                />
-                <span class="text-sm">MATIÈRES DURABLES ET VEGAN</span>
-              </li>
-              <li class="flex items-center py-2">
-                <img
-                  src="./assets/GroupSalute.png"
-                  alt="confiance partners "
-                  class="w-11 h-11 mr-8"
-                />
-                <span class="text-sm">PARTENAIRES DE CONFIANCE</span>
-              </li>
-              <li class="flex items-center py-2">
-                <img
-                  src="./assets/Vectorartisanal.png"
-                  alt="conçu et assemblé à la main"
-                  class="w-11 h-11 mr-8"
-                />
-                <span class="text-sm">CONÇU ET ASSEMBLÉ À LA MAIN</span>
-              </li>
-            </ul>
-          </div>
-        </div> -->
-
         <section>
           <div>
             <div
-              class="grid gap-20 opacity-75 uppercase py-24 px-4 text-center"
+              class="flex flex-col opacity-75 uppercase py-24 text-center lg:flex lg:items-center lg:justify-center"
             >
               <p class="w-80 h-56 text-lg mx-auto leading-7">
                 Lorem ipsum dolor sit amet consectetur. Cursus facilisis in
@@ -372,110 +290,121 @@
                 quam non magna. Quis eget accumsan in aliquam. Lorem tristique
                 in eu vitae turpis mattis risus urna in.
               </p>
-              <div class="flex items-center justify-center underline">
+              <div class="flex items-center justify-center underline mt-12">
                 <span class="bg-transparent border-0 mr-2"
                   >SUIVEZ-NOUS SUR INSTAGRAM </span
                 ><img src="./assets/Iconstrush.png" alt="" />
               </div>
             </div>
-            <div class="flex justify-center w-full">
-              <img src="./assets/image00002 1.png" alt="" />
-              <img
-                src="./assets/Picnic goodies arrangement on a blanket1.png"
-                alt=""
-              />
-              <img src="./assets/image00017-min.png" alt="" />
-            </div>
           </div>
         </section>
-        <section>
-          <div>
-            <div class="p-4 text-xs">
-              <div class="mb-10">
-                <span>
-                  <a href="#" class="block py-2 text-xs text-black no-underline"
-                    >INSTAGRAM</a
-                  >
-                </span>
-                <span>
-                  <a href="#" class="block py-2 text-xs text-black no-underline"
-                    >TIKTOK</a
-                  >
-                </span>
-                <span>
-                  <a href="#" class="block py-2 text-xs text-black no-underline"
-                    >PINTEREST</a
-                  >
-                </span>
-              </div>
-              <div class="mb-10">
-                <span>
-                  <a href="#" class="block py-2 text-xs text-black no-underline"
-                    >A PROPOS</a
-                  >
-                </span>
-                <span>
-                  <a href="#" class="block py-2 text-xs text-black no-underline"
-                    >CONTACT</a
-                  >
-                </span>
-                <span>
-                  <a href="#" class="block py-2 text-xs text-black no-underline"
-                    >FAQ</a
-                  >
-                </span>
-              </div>
-              <div class="mb-10">
-                <span>
-                  <a href="#" class="block py-2 text-xs text-black no-underline"
-                    >SERVICE CLIENT</a
-                  >
-                </span>
-
-                <span>
-                  <a
-                    href="#"
-                    class="block py-2 text-xs uppercase text-black no-underline"
-                    >INFORMATION DE LIVRAISON</a
-                  >
-                </span>
-                <span>
-                  <a
-                    href="#"
-                    class="block py-2 text-xs uppercase text-black no-underline"
-                    >GUIDE DES TAILLES</a
-                  >
-                </span>
-              </div>
-              <div class="mb-10">
-                <span>
-                  <a
-                    href="#"
-                    class="block py-2 text-xs uppercase text-black no-underline font-light"
-                    >MENTIONS LÉGALES</a
-                  >
-                </span>
-                <span>
-                  <a
-                    href="#"
-                    class="block py-2 text-xs uppercase text-black no-underline"
-                    >POLITIQUE DE CONFIDENTIALITE</a
-                  >
-                </span>
-                <span>
-                  <a
-                    href="#"
-                    class="block py-2 text-xs uppercase text-black no-underline"
-                    >CONDITIONS GÉNÉRALES DE VENTE</a
-                  >
-                </span>
-              </div>
-            </div>
-            <span class="uppercase w-20 h-6 text-base px-4">Trush 2023</span>
+        <section class="max-w-screen">
+          <div class="flex justify-center w-full">
+            <img
+              src="./assets/image00002 1.png"
+              alt=""
+              class="border border-solid"
+            />
+            <img
+              src="./assets/Picnic goodies arrangement on a blanket1.png"
+              alt=""
+              class="border border-solid"
+            />
+            <img
+              src="./assets/image00017-min.png"
+              alt=""
+              class="border border-solid"
+            />
           </div>
         </section>
       </section>
     </main>
+    <footer>
+      <div class="w-11/12 mx-auto">
+        <div class="mt-24 text-xs">
+          <div class="mb-10">
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >INSTAGRAM</a
+              >
+            </span>
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >TIKTOK</a
+              >
+            </span>
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >PINTEREST</a
+              >
+            </span>
+          </div>
+          <div class="mb-10">
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >A PROPOS</a
+              >
+            </span>
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >CONTACT</a
+              >
+            </span>
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >FAQ</a
+              >
+            </span>
+          </div>
+          <div class="mb-10">
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >SERVICE CLIENT</a
+              >
+            </span>
+
+            <span>
+              <a
+                href="#"
+                class="block pb-7 text-xs uppercase text-black no-underline"
+                >INFORMATION DE LIVRAISON</a
+              >
+            </span>
+            <span>
+              <a
+                href="#"
+                class="block pb-7 text-xs uppercase text-black no-underline"
+                >GUIDE DES TAILLES</a
+              >
+            </span>
+          </div>
+          <div class="mb-10">
+            <span>
+              <a
+                href="#"
+                class="block pb-7 text-xs uppercase text-black no-underline font-light"
+                >MENTIONS LÉGALES</a
+              >
+            </span>
+            <span>
+              <a
+                href="#"
+                class="block pb-7 text-xs uppercase text-black no-underline"
+                >POLITIQUE DE CONFIDENTIALITE</a
+              >
+            </span>
+            <span>
+              <a
+                href="#"
+                class="block pb-7 text-xs uppercase text-black no-underline"
+                >CONDITIONS GÉNÉRALES DE VENTE</a
+              >
+            </span>
+          </div>
+        </div>
+        <span class="uppercase w-20 h-6 text-base">Trush 2023</span>
+      </div>
+    </footer>
     <script>
       document.getElementById("burger").addEventListener("click", function () {
         document.getElementById("menu").classList.toggle("hidden");
