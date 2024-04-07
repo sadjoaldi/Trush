@@ -9,7 +9,7 @@
   <body class="font-xs">
     <header>
       <nav
-        class="flex justify-between items-center mt-2 h-16 lg:flex lg:justify-between lg:items-center"
+        class="flex justify-between items-center h-16 lg:flex lg:justify-around lg:items-center"
       >
         <div class="hidden lg:flex lg:items-center lg:justify-center">
           <span>FR </span>
@@ -31,7 +31,7 @@
             />
           </svg>
         </div>
-        <div class="relative">
+        <div class="relative w-2/3 lg:static">
           <button
             id="burger"
             class="focus:outline-none block lg:hidden bg-transparent border-0 cursor-pointer ml-4"
@@ -44,32 +44,34 @@
           </button>
           <div
             id="menu"
-            class="absolute w-64 mt-2 py-2 lg:mt-0 lg:py-0 bg-transparent rounded-lg shadow-xl hidden lg:flex lg:items-center lg:justify-between lg:shadow-none"
+            class="absolute lg:static lg:w-[22rem] lg:mx-auto mt-2 py-2 lg:mt-0 lg:py-0 bg-transparent rounded-lg shadow-xl hidden lg:flex lg:items-center lg:justify-around lg:shadow-none"
           >
             <a
               href="./index.html"
-              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
+              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white no-underline font-bold"
               >Accueil</a
             >
             <a
               href="./history.html"
-              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
+              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white no-underline"
               >Histoire</a
             >
             <a
               href="./contact.html"
-              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
+              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white no-underline"
               >Contact</a
             >
           </div>
         </div>
         <span class="mr-2">PANIER (0)</span>
       </nav>
-      <img
-        src="./assets/hero.jpg"
-        alt="logo"
-        class="w-full h-full lg:h-[610px] lg:w-screen object-cover object-center"
-      />
+      <div class="w-11/12 mx-auto">
+        <img
+          src="./assets/bannièreheadimag.png"
+          alt="logo"
+          class="lg:h-[610px] lg:w-full h-[55vh] w-[91vw] border border-solid"
+        />
+      </div>
     </header>
     <main>
       <section>
