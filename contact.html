@@ -8,7 +8,9 @@
   </head>
   <body>
     <header>
-      <nav class="flex justify-between items-center mt-2 h-16">
+      <nav
+        class="flex justify-between items-center h-16 lg:flex lg:justify-around lg:items-center"
+      >
         <div class="hidden lg:flex lg:items-center lg:justify-center">
           <span>FR </span>
           <svg
@@ -29,10 +31,10 @@
             />
           </svg>
         </div>
-        <div class="relative">
+        <div class="relative w-2/3 lg:static">
           <button
             id="burger"
-            class="focus:outline-none lg:hidden bg-transparent border-0 cursor-pointer ml-4"
+            class="focus:outline-none block lg:hidden bg-transparent border-0 cursor-pointer ml-4"
           >
             <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
               <path
@@ -42,21 +44,21 @@
           </button>
           <div
             id="menu"
-            class="absolute w-64 mt-2 py-2 bg-transparent rounded-lg shadow-xl hidden lg:flex lg:items-center lg:justify-between"
+            class="absolute lg:static lg:w-[22rem] lg:mx-auto mt-2 py-2 lg:mt-0 lg:py-0 bg-transparent rounded-lg shadow-xl hidden lg:flex lg:items-center lg:justify-around lg:shadow-none"
           >
             <a
               href="./index.html"
-              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
+              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white no-underline font-bold"
               >Accueil</a
             >
             <a
               href="./history.html"
-              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
+              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white no-underline"
               >Histoire</a
             >
             <a
               href="./contact.html"
-              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white"
+              class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white no-underline"
               >Contact</a
             >
           </div>
@@ -65,12 +67,16 @@
       </nav>
     </header>
     <main>
-      <div class="w-11/12 mx-auto">
-        <h2 class="text-3xl mb-4 w-11/12">
+      <div
+        class="w-11/12 mx-auto flex flex-col items-center justify-center mt-8 lg:mt-[120px]"
+      >
+        <h2 class="w-[99%] mb-4 lg:text-center">
           UNE QUESTION ? UNE DEMANDE PARTICULIÈRE?
         </h2>
 
-        <form class="flex flex-col">
+        <form
+          class="w-full flex flex-col lg:grid lg:grid-cols-2 lg:gap-x-8 lg:gap-y-4 lg:w-2/4 lg:mt-16"
+        >
           <input
             type="text"
             placeholder="PRENOM"
@@ -91,138 +97,156 @@
             placeholder="TÉLÉPHONE"
             class="border border-gray-300 py-3 px-4 mb-2"
           />
+
           <input
             type="tel"
             placeholder="OBJECT"
-            class="border border-gray-300 py-3 px-4 mb-2"
+            class="border border-gray-300 py-3 px-4 mb-2 w-full lg:col-span-2"
           />
           <textarea
             placeholder="MESSAGE"
             rows="10"
-            class="border border-gray-300 p-4 mb-2 resize-none"
+            class="border border-gray-300 p-4 mb-2 resize-none w-full lg:col-span-2"
           ></textarea>
 
           <button
             type="submit"
-            class="py-2 bg-transparent border border-solid border-red-950 px-4 rounded flex items-center justify-center"
+            class="py-2 bg-transparent border border-solid border-red-950 px-4 rounded flex items-center justify-center w-full lg:col-span-2"
           >
             <img src="./assets/Iconssend.jpg" alt="" class="mr-2" />
             ENVOYER
           </button>
         </form>
       </div>
-    </main>
-    <footer>
-      <section class="">
+      <section>
         <div
-          class="grid gap-20 opacity-75 uppercase py-24 px-4 text-center relative -z-30"
+          class="flex flex-col opacity-75 uppercase py-24 text-center lg:flex lg:items-center lg:justify-center lg:py-40"
         >
-          <p class="w-80 h-56 text-lg mx-auto leading-7">
+          <p class="text-center text-lg lg:w-[45rem]">
             Lorem ipsum dolor sit amet consectetur. Cursus facilisis in gravida
             aliquet ac sed elementum. Donec et in tellus aliquam quam non magna.
             Quis eget accumsan in aliquam. Lorem tristique in eu vitae turpis
             mattis risus urna in.
           </p>
-          <div class="flex items-center justify-center underline">
+          <div
+            class="flex items-center justify-center underline mt-12 lg:mt-32"
+          >
             <span class="bg-transparent border-0 mr-2"
               >SUIVEZ-NOUS SUR INSTAGRAM </span
             ><img src="./assets/Iconstrush.png" alt="" />
           </div>
         </div>
-        <div class="flex justify-center w-full">
-          <img src="./assets/image00002 1.png" alt="" />
-          <img
-            src="./assets/Picnic goodies arrangement on a blanket1.png"
-            alt=""
-          />
-          <img src="./assets/image00017-min.png" alt="" />
-        </div>
       </section>
       <section>
-        <div>
-          <div class="p-4 text-xs">
-            <div class="mb-10">
-              <span>
-                <a href="#" class="block py-2 text-xs text-black no-underline"
-                  >INSTAGRAM</a
-                >
-              </span>
-              <span>
-                <a href="#" class="block py-2 text-xs text-black no-underline"
-                  >TIKTOK</a
-                >
-              </span>
-              <span>
-                <a href="#" class="block py-2 text-xs text-black no-underline"
-                  >PINTEREST</a
-                >
-              </span>
-            </div>
-            <div class="mb-10">
-              <span>
-                <a href="#" class="block py-2 text-xs text-black no-underline"
-                  >A PROPOS</a
-                >
-              </span>
-              <span>
-                <a href="#" class="block py-2 text-xs text-black no-underline"
-                  >CONTACT</a
-                >
-              </span>
-              <span>
-                <a href="#" class="block py-2 text-xs text-black no-underline"
-                  >FAQ</a
-                >
-              </span>
-            </div>
-            <div class="mb-10">
-              <span>
-                <a href="#" class="block py-2 text-xs text-black no-underline"
-                  >SERVICE CLIENT</a
-                >
-              </span>
-
-              <span>
-                <a
-                  href="#"
-                  class="block py-2 text-xs uppercase text-black no-underline"
-                  >INFORMATION DE LIVRAISON</a
-                >
-              </span>
-              <span>
-                <a
-                  href="#"
-                  class="block py-2 text-xs uppercase text-black no-underline"
-                  >GUIDE DES TAILLES</a
-                >
-              </span>
-            </div>
-            <div class="mb-10">
-              <span>
-                <a
-                  href="#"
-                  class="block py-2 text-xs uppercase text-black no-underline font-light"
-                  >MENTIONS LÉGALES</a
-                >
-              </span>
-              <span>
-                <a
-                  href="#"
-                  class="block py-2 text-xs uppercase text-black no-underline"
-                  >POLITIQUE DE CONFIDENTIALITE</a
-                >
-              </span>
-              <span>
-                <a
-                  href="#"
-                  class="block py-2 text-xs uppercase text-black no-underline"
-                  >CONDITIONS GÉNÉRALES DE VENTE</a
-                >
-              </span>
-            </div>
-          </div>
-          <span class="uppercase w-20 h-6 text-base">Trush 2023</span>
+        <div class="flex justify-center w-full">
+          <img
+            src="./assets/im01.png"
+            alt=""
+            class="w-1/3 border border-solid"
+          />
+          <img
+            src="./assets/img02.png"
+            alt=""
+            class="w-1/3 border border-solid"
+          />
+          <img
+            src="./assets/img03.png"
+            alt=""
+            class="w-1/3 border border-solid"
+          />
         </div>
+      </section>
+    </main>
+    <footer>
+      <section class="">
+        <div
+          class="mt-24 text-xs lg:flex lg:justify-around lg:items-center lg:w-full px-4 lg:px-0"
+        >
+          <div class="mb-10">
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >INSTAGRAM</a
+              >
+            </span>
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >TIKTOK</a
+              >
+            </span>
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >PINTEREST</a
+              >
+            </span>
+          </div>
+          <div class="mb-10">
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >A PROPOS</a
+              >
+            </span>
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >CONTACT</a
+              >
+            </span>
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >FAQ</a
+              >
+            </span>
+          </div>
+          <div class="mb-10">
+            <span>
+              <a href="#" class="block pb-7 text-xs text-black no-underline"
+                >SERVICE CLIENT</a
+              >
+            </span>
+
+            <span>
+              <a
+                href="#"
+                class="block pb-7 text-xs uppercase text-black no-underline"
+                >INFORMATION DE LIVRAISON</a
+              >
+            </span>
+            <span>
+              <a
+                href="#"
+                class="block pb-7 text-xs uppercase text-black no-underline"
+                >GUIDE DES TAILLES</a
+              >
+            </span>
+          </div>
+          <div class="mb-10">
+            <span>
+              <a
+                href="#"
+                class="block pb-7 text-xs uppercase text-black no-underline font-light"
+                >MENTIONS LÉGALES</a
+              >
+            </span>
+            <span>
+              <a
+                href="#"
+                class="block pb-7 text-xs uppercase text-black no-underline"
+                >POLITIQUE DE CONFIDENTIALITE</a
+              >
+            </span>
+            <span>
+              <a
+                href="#"
+                class="block pb-7 text-xs uppercase text-black no-underline"
+                >CONDITIONS GÉNÉRALES DE VENTE</a
+              >
+            </span>
+          </div>
+        </div>
+        <p
+          class="uppercase h-6 text-base font-body lg:w-11/12 lg:ml-auto ml-[14px]"
+        >
+          Trush 2023
+        </p>
       </section>
     </footer>
     <script>

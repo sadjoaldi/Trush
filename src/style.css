@@ -8,3 +8,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* form {
+  grid-template-areas:
+    "prenom nom"
+    "mail tel"
+    "object object"
+    "message message"
+    "button button";
+} */
