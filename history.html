@@ -44,7 +44,7 @@
           </button>
           <div
             id="menu"
-            class="absolute lg:static lg:w-[22rem] lg:mx-auto mt-2 py-2 lg:mt-0 lg:py-0 bg-transparent rounded-lg shadow-xl hidden lg:flex lg:items-center lg:justify-around lg:shadow-none"
+            class="absolute lg:static lg:w-[22rem] lg:mx-auto mt-2 py-2 lg:mt-0 lg:py-0 bg-transparent rounded-lg shadow-xl hidden lg:flex lg:items-center lg:justify-around lg:shadow-none z-10"
           >
             <a
               href="./index.html"
@@ -68,23 +68,31 @@
     </header>
     <main class="">
       <section class="">
-        <div class="relative px-4 pt-16">
-          <h1 class="uppercase">L’histoire de Trush</h1>
+        <div
+          class="relative px-4 pt-16 lg:flex lg:flex-col lg:justify-center lg:items-center"
+        >
+          <div class="lg:absolute lg:top-20 lg:left-32">
+            <h1 class="uppercase">L’histoire de Trush</h1>
 
-          <p class="w-80 h-56 text-lg mt-4 opacity-75 uppercase text-left">
-            Lorem ipsum dolor sit amet consectetur. Cursus facilisis in gravida
-            aliquet ac sed elementum. Donec et in tellus aliquam quam non magna.
-            Quis
-          </p>
+            <p
+              class="w-80 h-56 text-lg mt-8 opacity-75 uppercase text-left lg:w-[511px]"
+            >
+              Lorem ipsum dolor sit amet consectetur. Cursus facilisis in
+              gravida aliquet ac sed elementum. Donec et in tellus aliquam quam
+              non magna. Quis
+            </p>
+          </div>
 
-          <img
-            src="./assets/img04.png"
-            alt=""
-            class="flex justify-center items-center w-2/3 h-96 mx-auto -mt-32"
-          />
+          <video
+            src="./assets/videos/copy_6E1B537C-DC58-4846-B2B4-B1FEFD626018.mov"
+            autoplay
+            loop
+            muted
+            class="w-full lg:w-[32%] lg:h-full lg:mx-auto -mt-32 lg:mt-0 object-cover"
+          ></video>
 
           <p
-            class="w-80 h-56 text-lg leading-7 opacity-75 uppercase text-right absolute bottom-[-160px] right-4"
+            class="w-80 h-56 text-lg mt-8 opacity-75 uppercase text-left lg:w-[511px] absolute bottom-[-145px] lg:right-40 right-4"
           >
             Lorem ipsum dolor sit amet consectetur. Cursus facilisis in gravida
             aliquet ac sed elementum. Donec et in tellus aliquam quam non magna.
